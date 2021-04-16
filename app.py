@@ -10,18 +10,18 @@ def index():
 
 @app.route('/signals/')
 def signals():
-    pass
+    return render_template('signals.html')
 
 
 @app.route('/positions/')
 def positions():
-    pass
+    return render_template('positions.html')
 
 
 @app.route('/models/')
 def models():
-    pass
+    return render_template('models.html')
 
 
 if __name__ == '__main__':
-    app.run()
+    app.run(host='0.0.0.0')
