@@ -17,8 +17,8 @@ WORKDIR /app
 
 RUN pip3 install -r requirements.txt
 
-COPY . /app
+COPY yavex-bot /app
 
 ENTRYPOINT [ "python3" ]
 
-CMD [ "app.py" ]
+CMD [ "__init__.py" ]
